@@ -1,5 +1,5 @@
 import { Point } from './linear-algebra/point';
-import { Spline } from './linear-algebra/spline';
+import { BezzierSpline } from './linear-algebra/spline';
 
 /**
  * Options for drawing a point onto a canvas
@@ -136,7 +136,7 @@ export const clear = (ctx: CanvasRenderingContext2D) => {
 
 export const drawSpline = (
     ctx: CanvasRenderingContext2D,
-    spline: Spline,
+    spline: BezzierSpline,
     steps: number,
     options?: (p: Point) => DrawPointOptions
 ) => {
