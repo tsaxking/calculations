@@ -15,6 +15,50 @@
     ".": {
       "import": "./lib/esm/index.js",
       "require": "./lib/cjs/index.js"
+    },
+    "./linear-algebra/": {
+      "import": "./lib/esm/linear-algebra/index.js",
+      "require": "./lib/cjs/linear-algebra/index.js"
+    },
+    "./linear-algebra/matrix-caluclations": {
+      "import": "./lib/esm/linear-algebra/matrix-caluclations.js",
+      "require": "./lib/cjs/linear-algebra/matrix-caluclations.js"
+    },
+    "./linear-algebra/matrix": {
+      "import": "./lib/esm/linear-algebra/matrix.js",
+      "require": "./lib/cjs/linear-algebra/matrix.js"
+    },
+    "./linear-algebra/plane": {
+      "import": "./lib/esm/linear-algebra/plane.js",
+      "require": "./lib/cjs/linear-algebra/plane.js"
+    },
+    "./linear-algebra/point": {
+      "import": "./lib/esm/linear-algebra/point.js",
+      "require": "./lib/cjs/linear-algebra/point.js"
+    },
+    "./linear-algebra/spline": {
+      "import": "./lib/esm/linear-algebra/spline.js",
+      "require": "./lib/cjs/linear-algebra/spline.js"
+    },
+    "./linear-algebra/vector": {
+      "import": "./lib/esm/linear-algebra/vector.js",
+      "require": "./lib/cjs/linear-algebra/vector.js"
+    },
+    "./statistics": {
+      "import": "./lib/esm/statistics.js",
+      "require": "./lib/cjs/statistics.js"
+    },
+    "./graphing": {
+      "import": "./lib/esm/graphing.js",
+      "require": "./lib/cjs/graphing.js"
+    },
+    "./calculus": {
+      "import": "./lib/esm/calculus.js",
+      "require": "./lib/cjs/calculus.js"
+    },
+    "./polygon": {
+      "import": "./lib/esm/polygon.js",
+      "require": "./lib/cjs/polygon.js"
     }
   },
   "dependencies": {
