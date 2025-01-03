@@ -16,31 +16,31 @@
       "import": "./lib/esm/index.js",
       "require": "./lib/cjs/index.js"
     },
-    "./linear-algebra/": {
+    "./linear-algebra": {
       "import": "./lib/esm/linear-algebra/index.js",
       "require": "./lib/cjs/linear-algebra/index.js"
     },
-    "./linear-algebra/matrix-caluclations": {
+    "./matrix-caluclations": {
       "import": "./lib/esm/linear-algebra/matrix-caluclations.js",
       "require": "./lib/cjs/linear-algebra/matrix-caluclations.js"
     },
-    "./linear-algebra/matrix": {
+    "./matrix": {
       "import": "./lib/esm/linear-algebra/matrix.js",
       "require": "./lib/cjs/linear-algebra/matrix.js"
     },
-    "./linear-algebra/plane": {
+    "./plane": {
       "import": "./lib/esm/linear-algebra/plane.js",
       "require": "./lib/cjs/linear-algebra/plane.js"
     },
-    "./linear-algebra/point": {
+    "./point": {
       "import": "./lib/esm/linear-algebra/point.js",
       "require": "./lib/cjs/linear-algebra/point.js"
     },
-    "./linear-algebra/spline": {
+    "./spline": {
       "import": "./lib/esm/linear-algebra/spline.js",
       "require": "./lib/cjs/linear-algebra/spline.js"
     },
-    "./linear-algebra/vector": {
+    "./vector": {
       "import": "./lib/esm/linear-algebra/vector.js",
       "require": "./lib/cjs/linear-algebra/vector.js"
     },
