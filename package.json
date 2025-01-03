@@ -1,0 +1,23 @@
+{
+  "name": "math",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.commonjs.json && node ./scripts/post-build.js",
+    "install": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "exports": {
+    ".": {
+      "import": "./lib/esm/index.js",
+      "require": "./lib/cjs/index.js"
+    }
+  },
+  "dependencies": {
+    "typescript": "^5.7.2"
+  }
+}
