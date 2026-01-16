@@ -150,3 +150,45 @@ export class CubicSpline implements Spline {
         });
     }
 }
+
+
+export const catmullRom = (points: Point2D[]) => {
+  if (points.length < 2) {
+    throw new Error('At least two points are required');
+  }
+
+  const clamp = (i: number) =>
+    points[Math.max(0, Math.min(points.length - 1, i))];
+
+  return (t: number): Point2D => {
+    const n = points.length - 1;
+    const u = Math.max(0, Math.min(1, t)) * n;
+
+    const i = Math.floor(u);
+    const s = u - i;
+
+    const p0 = clamp(i - 1);
+    const p1 = clamp(i);
+    const p2 = clamp(i + 1);
+    const p3 = clamp(i + 2);
+
+    const s2 = s * s;
+    const s3 = s2 * s;
+
+    const x =
+      0.5 *
+      ((2 * p1[0]) +
+        (-p0[0] + p2[0]) * s +
+        (2 * p0[0] - 5 * p1[0] + 4 * p2[0] - p3[0]) * s2 +
+        (-p0[0] + 3 * p1[0] - 3 * p2[0] + p3[0]) * s3);
+
+    const y =
+      0.5 *
+      ((2 * p1[1]) +
+        (-p0[1] + p2[1]) * s +
+        (2 * p0[1] - 5 * p1[1] + 4 * p2[1] - p3[1]) * s2 +
+        (-p0[1] + 3 * p1[1] - 3 * p2[1] + p3[1]) * s3);
+
+    return [x, y];
+  };
+};
